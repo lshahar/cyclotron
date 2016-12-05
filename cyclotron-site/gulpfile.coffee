@@ -281,7 +281,7 @@ gulp.task 'webserver', ->
     confFolder = '_public/js/conf'
 
     if !fs.existsSync(confFolder + '/configService.js')
-        gulp.src confFolder + '/sample.configService.js'
+        gulp.src confFolder + '/configService.js'
             .pipe rename 'configService.js'
             .pipe gulp.dest confFolder
 
